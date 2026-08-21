@@ -11,11 +11,12 @@ myY  <- read.csv("Pheno.csv", head = TRUE)
 myGD <- read.csv("Geno.csv", head = TRUE)
 myGM <- read.csv("Map.csv" , head = TRUE)
 
+###
 #Step 2: Run GAPIT
 myGAPIT <- GAPIT(
   Y=myY,
   GD=myGD,
   GM=myGM,
   PCA.total=3,
-  model="BLINK"
+  model="FarmCPU"
 )
